@@ -1,1 +1,1 @@
-web: gunicorn luxelandstays.wsgi
+web: web: gunicorn luxelandstays.wsgi:application
