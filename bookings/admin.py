@@ -1,3 +1,8 @@
 from django.contrib import admin
+# Import Booking model from models.py
+from .models import Reserve, UserProfile
 
-# Register your models here.
+
+admin.site.register(Reserve)
+
+admin.site.register(UserProfile)
