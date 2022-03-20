@@ -15,6 +15,7 @@ class Reserve(models.Model):
 
     class Meta:
         ordering = ['check_in']
+        
 
 class UserProfile(models.Model):
     name = models.CharField(max_length=50)
