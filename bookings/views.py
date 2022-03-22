@@ -30,6 +30,29 @@ class FirPineNestView(TemplateView):
 class CreateProfileView(TemplateView):
     template_name = "create_profile.html"
 
+    def get (self, request, *args, **kwargs):
+        return render(
+            request,
+            "create_profile.html",
+        )
+
+    def post(self, request):
+        name = request.POST.get("name")
+        email = request.POST.get("email")
+        phone = request.POST.get("phone_number")
+
+        CreateUserProfile = UserProfile.objects.create(
+            name=name,
+            email=email,
+            phone_number=phone,
+            user=request.user
+
+        )
+
+        CreateUserProfile.save()
+
+        return redirect(reverse('home'))
+
 
 class MakeReservationView(TemplateView):
     template_name = "make_reservation.html"
