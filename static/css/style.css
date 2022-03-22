@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.navbar-expand-lg navbar-light bg-light {
+    background-color: #B4D2D9;
+}
+
+.navlink {
+    margin-right: 1em;
+}
+
+.cabin {
+    text-align: center;
+}
