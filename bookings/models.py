@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 
 STATUS = ((0, "Reservation Requested"), (1, "Reservation Accepted"))
 
-class Reserve(models.Model):
+class Reservation(models.Model):
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="user_bookings")
     check_in = models.DateField(auto_now=False)
@@ -14,7 +14,7 @@ class Reserve(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
 
     class Meta:
-        ordering = ['check_in']
+        ordering = ['-check_in']
         
 
 class UserProfile(models.Model):
