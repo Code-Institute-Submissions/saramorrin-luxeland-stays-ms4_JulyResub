@@ -6,9 +6,22 @@
     border: none;
 }
 
-.navbar-expand-lg navbar-light bg-light {
-    background-color: #B4D2D9;
-}
+/* Colours */
+
+nav .navbar-nav li a{
+    color: white !important;
+    }
+
+.dropdown ~ li a:hover{
+    background-color: teal;
+} 
+
+/*
+#room-gallery-background {
+    background-color: #E5E4E2;
+} */
+
+/* Text alignment */
 
 .navlink {
     margin-right: 1em;
@@ -17,3 +30,46 @@
 .cabin {
     text-align: center;
 }
+
+.description {
+    text-align: center;
+    padding: 40px;
+}
+
+/* Image sizing */
+
+#homepage_image {
+    padding: inherit;
+}
+
+.img-fluid {
+    height: 50%;
+}
+
+/* Buttons */
+
+
+.button-container {
+    text-align: center;
+    height: 10vh;
+            
+}
+
+#book-button {
+    background-color: #F2AF88;
+    color: white;
+    font-size: 25px; 
+}
+
+
+    
+
+
+/* Footer */
+
+footer i {
+    font-size: 200%;
+    padding: 3%;
+    color: white
+}
+

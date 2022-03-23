@@ -1,1 +1,52 @@
 {% extends "base.html" %}
+
+{% block content %}
+
+<header>
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-12 mt-3">
+            <div class="row">
+                <img class="w-100 mx-auto" id="homepage_image"
+                    src="https://res.cloudinary.com/dvppi5ims/image/upload/v1647964987/pexels-simon-berger-688660_hz2zug.jpg"
+                    alt="main_image">
+            </div>    
+        </div>
+</header>
+
+    <div class="description">
+        <h1>MOUNTAIN LODGE</h1>
+        <p>Mountain Lodge is approached down a country track hidden within the beautiful mountains and trees of the region.<br> Enjoy the escapism and luxury this cabin has to offer, with a private hot tub overlooking the mountains,<br>surrounded by wildlife and nature, it has everything you need for a truly luxe escape.</p>
+    </div>
+
+    <div class="button-container">
+        <div class="orange-button">
+        <a href="{% url 'make_reservation' %}" class="btn btn-info" id="book-button" role="button">MAKE A BOOKING</a>
+        </div>
+    </div> 
+    
+    <div class="container features" id="room-gallery-background">
+        
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <img src="https://res.cloudinary.com/dvppi5ims/image/upload/v1647958891/pexels-ron-lach-9211817_s2jzav.jpg" class="img-fluid">
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <img src="https://res.cloudinary.com/dvppi5ims/image/upload/v1648026509/gleb-albovsky-a-0Qsar9rBg-unsplash_fos2mj.jpg" class="img-fluid">
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <img src="https://res.cloudinary.com/dvppi5ims/image/upload/v1648026511/pexels-roberto-nickson-2659629_anligc.jpg" class="img-fluid">
+            </div>
+
+              
+        </div>
+    </div>
+
+
+    
+
+
+{% endblock %}
+   

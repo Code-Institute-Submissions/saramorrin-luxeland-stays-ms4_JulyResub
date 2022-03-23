@@ -28,7 +28,7 @@ class FirPineNestView(TemplateView):
 
 
 class CreateProfileView(TemplateView):
-    template_name = "create_profile.html"
+    template_name = "signup.html"
 
     def get (self, request, *args, **kwargs):
         return render(
