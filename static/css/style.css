@@ -40,10 +40,17 @@ nav .navbar-nav li a{
 
 #homepage_image {
     padding: inherit;
+    height: 30%;
+    margin-top: -3rem;
 }
 
 .img-fluid {
-    height: 50%;
+    height: 60%;
+}
+
+#cabin-image {
+    text-align: center;
+    margin-top: 4rem;
 }
 
 /* Buttons */
@@ -58,7 +65,12 @@ nav .navbar-nav li a{
 #book-button {
     background-color: #F2AF88;
     color: white;
-    font-size: 25px; 
+    font-size: 25px;
+    border: #F2AF88;
+}
+
+#book-button:hover {
+    color: black;
 }
 
 

@@ -1,1 +1,51 @@
 {% extends "base.html" %}
+
+{% block content %}
+
+<header>
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-12 mt-3">
+            <div class="row">
+                <img class="w-100 mx-auto" id="homepage_image"
+                    src="https://res.cloudinary.com/dvppi5ims/image/upload/v1647965021/pexels-valeriia-miller-2527556_xix38e.jpg"
+                    alt="main_image">
+            </div>    
+        </div>
+</header>
+
+    <div class="description">
+        <h1>FIR PINE NEST</h1>
+        <p>Fir Pine Nest Cabin is our cosy cabin for two situated right in the heart of the Austrian Alpes.<br>The property is designed for couples with one en-suite master bedroom, perfect for romantic getaways.<br> Surrounded by blissfull nature, this beautifully designed snug has a list of luxuries including a locally producted organic hamper on arrival for that little bit of luxe.</p>
+    </div>
+
+    <div class="button-container">
+        <div class="orange-button">
+        <a href="{% url 'make_reservation' %}" class="btn btn-info" id="book-button" role="button">MAKE A BOOKING</a>
+        </div>
+    </div> 
+    
+    <div class="container features" id="room-gallery-background">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12" id="cabin-image">
+                <img src="https://res.cloudinary.com/dvppi5ims/image/upload/v1648055634/pexels-pavel-danilyuk-6549839_vq3nlz.jpg" class="img-fluid">
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-sm-12" id="cabin-image">
+                <img src="https://res.cloudinary.com/dvppi5ims/image/upload/v1648026503/nachelle-nocom-51adhgg5KkE-unsplash_vzeysp.jpg" class="img-fluid">
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-sm-12" id="cabin-image">
+                <img src="https://res.cloudinary.com/dvppi5ims/image/upload/v1648026508/pexels-rachel-claire-4825713_lkweqm.jpg" class="img-fluid">
+            </div>
+
+              
+        </div>
+    </div>
+
+
+    
+
+
+{% endblock %}
+   
