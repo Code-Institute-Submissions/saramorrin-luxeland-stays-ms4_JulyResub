@@ -1,21 +1,39 @@
-{% extends "account/base.html" %}
-
-{% load i18n %}
-
-{% block head_title %}{% trans "Signup" %}{% endblock %}
+{% extends "base.html" %}
 
 {% block content %}
-<h1>{% trans "Sign Up" %}</h1>
 
-<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+<div class="container"> <div class=" text-center mt-5 ">
+  <h1>Sign Up</h1>
+</div>
 
-<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <button type="submit">{% trans "Sign Up" %} &raquo;</button>
-</form>
+% if user.is_authenticated %}
+<div class="w-50 mx-auto py-5">
+    <form class="row g-3" method="POST">
+        {% csrf_token %}
+
+        <div class="col-12">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="f_name" name="f_name">
+        </div>
+
+        <div class="col-12">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="l_name" name="l_name">
+        </div>
+
+        <div class="col-12 mx-auto">
+            <label for="phone_number">Telephone Number</label>
+            <input type="number" class="form-control" id="phone_number" name="phone_number" minlength="11" maxlength="11">
+        </div>
+
+        <div class="col-12 text-center">
+            <a href="/"> <button type="submit" class="btn custom-red text-white">Create Profile</button>
+            </a>
+        </div>
+    </form>
+</div>
+
+<p>Already have an account? Then please <a href="{{ login_url }}">Login In</a>.</p>
+
 
 {% endblock %}

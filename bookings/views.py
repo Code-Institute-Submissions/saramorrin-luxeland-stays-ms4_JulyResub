@@ -33,7 +33,7 @@ class CreateProfileView(TemplateView):
     def get (self, request, *args, **kwargs):
         return render(
             request,
-            "create_profile.html",
+            "account/signup.html",
         )
 
     def post(self, request):

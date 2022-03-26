@@ -5,8 +5,10 @@ from .models import Reservation, UserProfile
 
 @admin.register(Reservation)
 class ReservationAdmin(admin.ModelAdmin):
-    list_display = ('user', 'check_in', 'check_out', 'guest_count')
-    search_fields = ('user', 'check_in')
+    list_filter = ('status', 'check_in')
+    readonly_fields = ('reservation_id',)
+    list_display = ('reservation_id', 'user', 'check_in', 'check_out', 'guest_count', 'status')
+    search_fields = ('reservation_id', 'user', 'check_in')
     actions = ['approve_reservation']
 
     def approve_reservation(self, queryset):
@@ -15,5 +17,5 @@ class ReservationAdmin(admin.ModelAdmin):
 
 @admin.register(UserProfile)
 class UserProfileAdmin(admin.ModelAdmin):
-    list_display = ('name', 'email', 'phone_number')
-    search_fields = ('name', 'email')
+    list_display = ('user', 'name', 'email', 'phone_number')
+    search_fields = ('user', 'name', 'email')
