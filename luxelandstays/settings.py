@@ -33,7 +33,7 @@ DEBUG = True
 # Required by django allauth
 SITE_ID = 1
 
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/make_reservation'
 LOGOUT_REDIRECT_URL = '/'
 ACCOUNT_SIGNUP_REDIRECT_URL = "/make_reservation"
 
