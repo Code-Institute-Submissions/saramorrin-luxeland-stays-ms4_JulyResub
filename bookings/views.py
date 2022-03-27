@@ -1,10 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 # Import Djano generic library
 from django.views import generic, View
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, DeleteView
 # Import Reservation model from models
 from .models import Reservation, UserProfile
-from .forms import UpdateReservation, EditUserProfile
+from .forms import UpdateReservation, EditUserProfile 
 
 
 class HomeView(TemplateView):
@@ -28,12 +28,12 @@ class FirPineNestView(TemplateView):
 
 
 class CreateProfileView(TemplateView):
-    template_name = "signup.html"
+    template_name = "create_profile.html"
 
     def get (self, request, *args, **kwargs):
         return render(
             request,
-            "account/signup.html",
+            "create_profile.html",
         )
 
     def post(self, request):
@@ -53,6 +53,30 @@ class CreateProfileView(TemplateView):
 
         return redirect(reverse('home'))
 
-
+# Make reservation view
 class MakeReservationView(TemplateView):
     template_name = "make_reservation.html"
+
+    def get(self, request, *args, **kwargs):
+        return render(
+            request,
+            "make_reservation.html"
+        )
+
+    def post(self, request):
+        check_in_date = request.POST.get("check_in_date")
+        check_out_date = request.POST.get("check_out_date")
+        number_of_guests = request.POST.get("number_of_guests")
+        notes = request.POST.get("notes")
+
+        make_reservation = Reservation.objects.create(
+            check_in=check_in_date,
+            check_out=check_out_date,
+            guest_count=number_of_guests,
+            user=request.user,
+            reservation_notes=notes
+        )
+
+        make_reservation.save()
+
+        return redirect(reverse('manage_reservation'))

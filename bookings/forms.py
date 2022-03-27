@@ -3,6 +3,7 @@ from django import forms
 from django.forms import ModelForm, CharField, TextInput
 
 
+
 class UpdateReservation(forms.ModelForm):
     class Meta:
         model = Reservation
@@ -14,3 +15,9 @@ class EditUserProfile(forms.ModelForm):
     class Meta:
         model = UserProfile
         fields = ('name', 'email', 'phone_number')
+
+
+class CreateProfile(forms.Form):
+    name = forms.CharField(max_length= 50)
+    email = forms.EmailField(max_length= 100)
+    phone_number = forms.ImageField(max_length= 11)
