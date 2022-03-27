@@ -117,6 +117,12 @@ footer i {
     transform: scale(1.5);
 }
 
+/* Sign in page */
+
+.custom-orange {
+    background-color: #F2AF88;
+    border: #F2AF88;
+}
 
 
 

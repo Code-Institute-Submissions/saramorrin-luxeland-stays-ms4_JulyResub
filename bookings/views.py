@@ -27,6 +27,10 @@ class FirPineNestView(TemplateView):
     template_name = "fir_pine_nest.html"
 
 
+class EditReservationView(TemplateView):
+    template_name = "edit_reservation.html"
+
+
 class CreateProfileView(TemplateView):
     template_name = "create_profile.html"
 
@@ -79,4 +83,4 @@ class MakeReservationView(TemplateView):
 
         make_reservation.save()
 
-        return redirect(reverse('manage_reservation'))
+        return redirect(reverse('edit_reservation'))

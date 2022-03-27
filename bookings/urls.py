@@ -9,5 +9,6 @@ urlpatterns = [
     path('fir_pine_nest/', views.FirPineNestView.as_view(), name='fir_pine_nest'),
     path('create_profile/', views.CreateProfileView.as_view(), name='create_profile'), 
     path('make_reservation/', views.MakeReservationView.as_view(), name='make_reservation'), 
+    path('edit_reservation/', views.EditReservationView.as_view(), name='edit_reservation'), 
     
 ]
