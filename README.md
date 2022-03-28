@@ -54,6 +54,31 @@ Throughout the project I used the GitHub Kanban project board to log all user st
 
 # 1.3. Skeleton
 
+### Wireframes
+
+Homepage Desktop
+![Home/Landing Page Desktop](assets/wireframes/balsamiq-homepage-desktop.jpg)
+
+Cabin Pages Desktop
+![Cabin Page Desktop](assets/wireframes/balsamiq-cabin-one-desktop.jpg)
+
+![Cabin Page Desktop](assets/wireframes/balsamiq-cabin-two-desktop.jpg)
+
+Contact Page Desktop
+![Contact Page Desktop](assets/wireframes/balsamiq-contact-desktop.jpg)
+
+Sign Up Page Desktop
+![Sign Up Page Desktop](assets/wireframes/balsamiq-signup-desktop.jpg)
+
+Log In Page Desktop
+![Log In Page Desktop](assets/wireframes/balsamiq-login-desktop.jpg)
+
+Log Out Page Desktop
+![Log Out Page Desktop](assets/wireframes/balsamiq-logout-desktop.jpg)
+
+Make Reservation Page Desktop
+![Make Reservation Page Desktop](assets/wireframes/balsamiq-make-reservation-desktop.jpg)
+
 # 1.4. Surface
 
 # 2. Features
