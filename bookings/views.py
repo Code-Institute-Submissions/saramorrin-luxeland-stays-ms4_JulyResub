@@ -31,6 +31,20 @@ class EditReservationView(TemplateView):
     template_name = "edit_reservation.html"
 
 
+class DeleteReservation(DeleteView):
+    template_name = "delete_reservation.html"
+
+
+class ManageReservation(generic.ListView):
+    model = Reservation
+    queryset = Reservation.objects.all()
+    template_name = "manage_reservation.html"
+    paginate_by = 5
+
+    def get_queryset(self):
+        return Reservation.objects.filter(user_id=self.request.user)
+
+
 class CreateProfileView(TemplateView):
     template_name = "create_profile.html"
 
@@ -57,7 +71,7 @@ class CreateProfileView(TemplateView):
 
         return redirect(reverse('home'))
 
-# Make reservation view
+
 class MakeReservationView(TemplateView):
     template_name = "make_reservation.html"
 
@@ -83,4 +97,4 @@ class MakeReservationView(TemplateView):
 
         make_reservation.save()
 
-        return redirect(reverse('edit_reservation'))
+        return redirect(reverse('manage_reservation'))
