@@ -111,6 +111,9 @@ Make Reservation Page Desktop
 
 # 4. Testing
 
+I have not been able to carry out testing for this project using the validator tools for HTML, CCS, Python, Javascript, Accessibility.
+
+
 # 5. Development Cycle
 
 ## Project Checklist
@@ -195,12 +198,15 @@ For the final deployment to Heroku, I had to:
 
 # 7. End Product
 
+I have not been able to add screenshots of my deployed site.
+
 # 8. Known Bugs
+
+- Some items in the navigation bar don't have a hover teal background to show the user they are on the selected page.
+- I have not been able to implement an edit reservation function or cancel reservation function at this time.
 
 # 9. Credits
 
-| Feature       | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+- All images came from [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/)
+- The website logo was created using [Canva](https://www.canva.com/q/pro/?irgwc=1&utm_medium=affiliate&utm_source=VIP%20Affiliate%20Network_229435&clickId=yf1QNOW%3A0xyIRBs3f2zLu1xeUkGQHERBh393T00&v=1)
+
