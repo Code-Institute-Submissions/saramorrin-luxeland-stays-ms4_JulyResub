@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse, redirect
 # Import Djano generic library
 from django.views import generic, View
 from django.views.generic import TemplateView, DeleteView
+from django.urls import reverse_lazy
 # Import Reservation model from models
 from .models import Reservation, UserProfile
 from .forms import UpdateReservation, EditUserProfile 
@@ -32,6 +33,9 @@ class EditReservationView(TemplateView):
 
 
 class DeleteReservation(DeleteView):
+    model = Reservation
+    pk_url_kwarg = "reservation_id"
+    success_url = reverse_lazy("manage_reservation")
     template_name = "delete_reservation.html"
 
 

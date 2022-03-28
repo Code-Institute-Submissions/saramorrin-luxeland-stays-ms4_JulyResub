@@ -1,1 +1,30 @@
 {% extends "base.html" %}
+
+{% block content %}
+
+<div class="container py-5">
+	<h1>Edit your reservation</h1>
+	<form method="POST">
+		{% csrf_token %} 
+        <div>
+            <label>Check In Date</label><br>
+            <input name="check_in_date" type="date" required>
+        </div>  
+        <div>
+            <label>Check Out Date</label><br>
+            <input name="check_out_date" type="date" required>
+        </div>    
+        <div>
+            <label>Number of guests</label><br>
+            <input name="number_of_guests" type="number" required>
+        </div>  
+        <div>
+            <label>Notes</label><br>
+            <textarea name="notes" required></textarea>
+        </div>         
+		<button class="btn btn-primary" type="submit">Make reservation</button>
+	</form>
+</div>
+
+
+{% endblock %}
