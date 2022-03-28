@@ -50,24 +50,33 @@ Throughout the project I used the GitHub Kanban project board to log all user st
 
 ![User Stories](assets/images-readme/)
 
-# 6. Deployment
+# 3. Technologies Used
 
-I used the terminal to deploy my project locally. To do this I had to:
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+    - The project uses HyperText Markup Language.
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+    - The project uses Cascading Style Sheets.
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+    - The project uses JavaScript.
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+    - The project uses Python.
+- [Boostrap 5](https://getbootstrap.com/)
+    - The project uses Bootstrap 5.
+- [PostgreSQL](https://www.postgresql.org/)
+    - The project uses PostgreSQL as a database.
+- [Gitpod](https://www.gitpod.io/)
+    - The project uses Gitpod.
+- [Chrome](https://www.google.co.uk/chrome/?brand=FKPE&gclid=CjwKCAjwloCSBhAeEiwA3hVo_aLVtE9nXO1mwfa7PzV7psraHUoRQKGmdOj5Bh8E6AFmMlOfebIsqBoCYPYQAvD_BwE&gclsrc=aw.ds)
+    - The project uses Chrome to debug and test the source code using HTML5.
+- [Balsamiq](https://balsamiq.com/)
+    - Balsamiq was used to create the wireframes during the design process.
+- [Google Fonts](https://fonts.google.com/)
+    - Google fonts were used to import the "Be Vietnam Pro" font into the style.css file which is used on all pages throughout the project.
+- [GitHub](https://github.com/)
+    - GitHub was used to store the project's code after being pushed from Git.
 
-- Create a repository on GitHub.
-- Clone the repository on your chosen source code editor (GitPod in my case) using the clone link.
-- Open the terminal within GitPod
-- Enter "python3 manage.py runserver into the terminal.
-- Go to local host address on my web browser.
-- All locally saved changes will show up here.
 
-For the final deployment to Heroku, I had to:
-
-- Uncomment the PostgreSQL databse from my settings.py file.
-- Set debug = False in my settings.py file.
-- Commit and push all files to GitHub
-- In Heroku, remove the DISABLE_COLLECTSTATIC config var.
-- In the deploy tab, go to the manual deploy sections and click deploy branch.
+# 4. Testing
 
 # 5. Development Cycle
 
@@ -131,6 +140,25 @@ For the final deployment to Heroku, I had to:
 ### Deploy new empty project to Heroku
 
 ![Deployed Heroku](assets/images/deployed_heroku.jpg)
+
+# 6. Deployment
+
+I used the terminal to deploy my project locally. To do this I had to:
+
+- Create a repository on GitHub.
+- Clone the repository on your chosen source code editor (GitPod in my case) using the clone link.
+- Open the terminal within GitPod
+- Enter "python3 manage.py runserver into the terminal.
+- Go to local host address on my web browser.
+- All locally saved changes will show up here.
+
+For the final deployment to Heroku, I had to:
+
+- Uncomment the PostgreSQL databse from my settings.py file.
+- Set debug = False in my settings.py file.
+- Commit and push all files to GitHub
+- In Heroku, remove the DISABLE_COLLECTSTATIC config var.
+- In the deploy tab, go to the manual deploy sections and click deploy branch.
 
 # 7. End Product
 
