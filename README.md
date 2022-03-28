@@ -50,6 +50,14 @@ Throughout the project I used the GitHub Kanban project board to log all user st
 
 ![User Stories](assets/images-readme/)
 
+# 1.2. Structure
+
+# 1.3. Skeleton
+
+# 1.4. Surface
+
+# 2. Features
+
 # 3. Technologies Used
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
