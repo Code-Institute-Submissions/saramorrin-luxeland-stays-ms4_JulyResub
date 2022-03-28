@@ -7,7 +7,7 @@ This project will show the use of CRUD functionality (Create, Read, Update, Dele
 
 A live website can be found [here](https://)
 
-![Website Preview](assets/images-readme/)
+![Website Preview](assets/images/responsive-image.jpg)
 
 # 1. UX
 
