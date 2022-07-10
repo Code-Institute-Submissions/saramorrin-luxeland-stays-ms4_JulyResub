@@ -34,7 +34,7 @@ class EditReservationView(TemplateView):
 
 class DeleteReservation(DeleteView):
     model = Reservation
-    pk_url_kwarg = "reservation_id"
+    pk_url_kwarg = "booking_uuid"
     success_url = reverse_lazy("manage_reservation")
     template_name = "delete_reservation.html"
 

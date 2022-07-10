@@ -44,9 +44,14 @@
 
               {% if user.is_authenticated %}
 
-              <li class="nav-item">
-                  <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
-              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link {{ manage_reservation_active }}" href="{% url 'manage_reservation' %}">Manage
+                    Reservation</a>
+               </li>
+
+               <li class="nav-item">
+                <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+               </li>
 
               {% else %}
 

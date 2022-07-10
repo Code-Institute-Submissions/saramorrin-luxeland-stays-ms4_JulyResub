@@ -1,1 +1,25 @@
 {% extends "base.html" %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+<div class="w-75 mx-auto py-5">
+    <form action="." method="POST">
+        {% csrf_token %}
+
+        <h3>Do you want to cancel the reservation "{{ reservation.reservation_id }}"?</h3>
+
+        <button class="btn custom-red text-white" type="submit">Yes</button>
+
+        <a class="btn custom-red text-white" href="{% url 'manage_reservation' %}">
+            Cancel
+        </a>
+    </form>
+</div>
+{% else %}
+
+Please login to cancel your booking
+
+{% endif %}
+
+{% endblock %}
