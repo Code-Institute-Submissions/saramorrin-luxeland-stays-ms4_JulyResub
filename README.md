@@ -111,8 +111,15 @@ Make Reservation Page Desktop
 
 # 4. Testing
 
-I have not been able to carry out testing for this project using the validator tools for HTML, CCS, Python, Javascript, Accessibility.
-
+![about page](assets/readme/about.jpg)
+![contact page](assets/readme/contact.jpg)
+![cabin page](assets/readme/cabin_mountain_lodge.jpg)
+![cabin page](assets/readme/cabin_fir_pine_nest.jpg)
+![register page](assets/readme/register.jpg)
+![login page](assets/readme/login.jpg)
+![make booking page](assets/readme/make_booking.jpg)
+![manage booking page](assets/readme/manage_booking.jpg)
+![logout page](assets/readme/logout.jpg)
 
 # 5. Development Cycle
 
